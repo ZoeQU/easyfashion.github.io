@@ -78,8 +78,24 @@ body {
     transform: translateY(-2px);
 }
 
-.link-block a {
-    margin: 8px 4px;
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.publication-links .link-block {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+}
+
+.publication-links .button {
+  height: 2.75rem;
+  margin: 0 !important;
+  align-items: center;
 }
 
 .dnerf {
@@ -746,9 +762,10 @@ code {
     max-width: 90vw;
   }
   
-  .link-block {
-    display: block;
-    margin-bottom: 0.5rem;
+  .publication-links .link-block {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0;
   }
   
   .button {
